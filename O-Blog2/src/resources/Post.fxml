@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="postVbox" maxWidth="500.0" minHeight="-Infinity" minWidth="-Infinity" prefWidth="500.0" spacing="5.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PostController">
+   <children>
+      <VBox spacing="5.0">
+         <children>
+            <Label fx:id="employeeName" text="employeeName" underline="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="postDisplay" style="-fx-border-color: #790000; -fx-border-radius: 10;" text="post" wrapText="true">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></Label>
+         </children>
+      </VBox>
+      <HBox fx:id="buttonHbox" alignment="TOP_RIGHT" spacing="20.0" />
+      <VBox fx:id="replyList" spacing="5.0">
+         <padding>
+            <Insets left="100.0" />
+         </padding>
+      </VBox>
+      <Separator prefWidth="200.0" style="-fx-background-color: #790000;" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane depthTest="ENABLE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="650.0" style="-fx-background-color: #A8EB12;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DesignationAddController">
+   <children>
+      <AnchorPane layoutX="6.0" layoutY="21.0" prefHeight="565.0" prefWidth="633.0" style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="54.0" prefHeight="469.0" prefWidth="50.0" style="-fx-background-color: linear-gradient(#790000,#C20000, #790000);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="331.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox layoutX="54.0" layoutY="111.0" prefHeight="120.0" prefWidth="143.0" AnchorPane.bottomAnchor="251.0" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="67.0" AnchorPane.topAnchor="111.0">
+                     <children>
+                        <Label text="Everest" textAlignment="CENTER" textFill="#f8f6f6">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="25.0" prefWidth="155.0" text="Blogger" textAlignment="RIGHT" textFill="#f8f4f4">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane focusTraversable="true" layoutX="280.0" layoutY="115.0" prefHeight="312.0" prefWidth="338.0" style="-fx-background-color: white; -fx-background-radius: left;" AnchorPane.bottomAnchor="173.0" AnchorPane.leftAnchor="280.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="115.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <children>
+                  <TextField fx:id="txtDesignation" layoutX="9.0" layoutY="84.0" prefHeight="60.0" prefWidth="300.0" promptText="Designation" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="28.0" />
+                  <Button fx:id="btnAdd" layoutX="92.0" layoutY="179.0" mnemonicParsing="false" onAction="#addDesignation" prefWidth="155.0" style="-fx-background-color: #790000;" text="Add" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnCancel" layoutX="92.0" layoutY="230.0" mnemonicParsing="false" prefWidth="155.0" style="-fx-background-color: #790000;" text="Cancel" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </AnchorPane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

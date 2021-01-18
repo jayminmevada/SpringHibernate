@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane depthTest="ENABLE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="650.0" style="-fx-background-color: #A8EB12;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <AnchorPane layoutX="6.0" layoutY="21.0" prefHeight="565.0" prefWidth="633.0" style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="54.0" prefHeight="469.0" prefWidth="50.0" style="-fx-background-color: linear-gradient(#790000,#C20000, #790000);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="331.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox layoutX="54.0" layoutY="111.0" prefHeight="120.0" prefWidth="143.0" AnchorPane.bottomAnchor="251.0" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="67.0" AnchorPane.topAnchor="111.0">
+                     <children>
+                        <Label text="Everest " textAlignment="CENTER" textFill="#f8f6f6">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="25.0" prefWidth="155.0" text="Blogger" textAlignment="RIGHT" textFill="#f8f4f4">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane focusTraversable="true" layoutX="243.0" layoutY="129.0" prefHeight="360.0" prefWidth="369.0" style="-fx-background-color: white; -fx-background-radius: left;" AnchorPane.bottomAnchor="111.0" AnchorPane.leftAnchor="243.0" AnchorPane.rightAnchor="38.0" AnchorPane.topAnchor="129.0">
+               <children>
+                  <Label layoutX="147.0" layoutY="14.0" prefHeight="45.0" prefWidth="61.0" text="Sign In" textFill="#1e0546">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtUserName" layoutX="38.0" layoutY="92.0" opacity="0.73" prefHeight="45.0" prefWidth="295.0" promptText="User Name" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="38.0">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="password" layoutX="38.0" layoutY="170.0" pickOnBounds="false" prefHeight="45.0" prefWidth="279.0" promptText="Password" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="38.0">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </PasswordField>
+                  <Button fx:id="btnLogin" layoutX="38.0" layoutY="259.0" mnemonicParsing="false" onAction="#login" prefWidth="115.0" style="-fx-background-color: #790000;" text="Sing IN" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnRegistration" layoutX="216.0" layoutY="259.0" mnemonicParsing="false" prefWidth="115.0" style="-fx-background-color: #790000;" text="Sing UP" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </AnchorPane>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </AnchorPane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

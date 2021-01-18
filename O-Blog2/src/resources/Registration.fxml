@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane depthTest="ENABLE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="650.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegistrationController">
+   <children>
+      <AnchorPane layoutX="6.0" layoutY="18.0" style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="1.0" layoutY="1.0" prefHeight="600.0" prefWidth="324.0" style="-fx-background-color: linear-gradient(#790000,#C20000, #790000);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="326.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox layoutX="54.0" layoutY="111.0" prefHeight="120.0" prefWidth="143.0" AnchorPane.bottomAnchor="251.0" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="67.0" AnchorPane.topAnchor="111.0">
+                     <children>
+                        <Label text="Everest " textAlignment="CENTER" textFill="#f8f6f6">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="25.0" prefWidth="155.0" text="Blogger" textAlignment="RIGHT" textFill="#f8f4f4">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane focusTraversable="true" layoutX="192.0" layoutY="29.0" style="-fx-background-color: white; -fx-background-radius: left;" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="192.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="29.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <children>
+                  <Label layoutX="121.0" layoutY="26.0" prefHeight="50.0" prefWidth="164.0" style="-fx-background-color: #ffffff;" text=" Employee Details">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <GridPane alignment="CENTER" layoutX="66.0" layoutY="96.0" prefHeight="342.0" prefWidth="300.0" vgap="40.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <TextField fx:id="txtName" promptText="Name" />
+                        <TextField fx:id="txtEmail" layoutX="290.0" layoutY="9.0" promptText="Email" GridPane.rowIndex="1" />
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+                           <children>
+                              <RadioButton fx:id="radMale" mnemonicParsing="false" text="Male">
+                                 <HBox.margin>
+                                    <Insets left="10.0" top="3.0" />
+                                 </HBox.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="radFemale" mnemonicParsing="false" text="Female">
+                                 <HBox.margin>
+                                    <Insets left="10.0" top="3.0" />
+                                 </HBox.margin>
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="gender" />
+                                 </toggleGroup>
+                              </RadioButton>
+                           </children>
+                        </HBox>
+                        <PasswordField fx:id="password" promptText="Password" GridPane.rowIndex="7" />
+                        <TextField fx:id="txtMobileNo" layoutX="10.0" layoutY="9.0" promptText="Mobile Number" GridPane.rowIndex="3" />
+                        <ComboBox fx:id="cBoxDepartment" prefWidth="300.0" promptText="Department" style="-fx-background-color: #ffffff; -fx-border-color: #790000;" GridPane.rowIndex="5" />
+                        <ComboBox fx:id="cBoxDesignation" layoutX="290.0" layoutY="151.0" prefWidth="300.0" promptText="Designation" style="-fx-background-color: #ffffff; -fx-border-color: #790000;" GridPane.rowIndex="6" />
+                        <ComboBox fx:id="cBoxUType" prefHeight="25.0" prefWidth="150.0" promptText="Type" style="-fx-background-color: #ffffff; -fx-border-color: #790000;" GridPane.rowIndex="4" />
+                     </children>
+                  </GridPane>
+                  <HBox alignment="CENTER" layoutX="113.0" layoutY="533.0" spacing="20.0" />
+                  <Button fx:id="btnSubmit" layoutX="132.0" layoutY="493.0" mnemonicParsing="false" style="-fx-background-color: #790000;" text="Submit" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnCancel" layoutX="240.0" layoutY="493.0" mnemonicParsing="false" style="-fx-background-color: #790000;" text="Cancel" textFill="#fffefe">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </AnchorPane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

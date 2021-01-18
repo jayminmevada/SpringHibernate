@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.replyMessageController">
+   <children>
+      <Label fx:id="replyerName" text="replyerName">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <VBox style="-fx-border-color: #790000; -fx-border-radius: 10;">
+         <children>
+            <Label fx:id="replyMessage" style="-fx-border-radius: 10;" text="replyMessege" wrapText="true">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></Label>
+         </children>
+      </VBox>
+   </children>
+</VBox>

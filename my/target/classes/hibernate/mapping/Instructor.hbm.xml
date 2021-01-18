@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping>
+	<class table="instructor" lazy="false" name="MavenHibernate.my.CRUD.Instructor">
+		<id column="id" type="int" name="id">
+			<generator class="increment"></generator>
+		</id>
+		<property name="firstName" type="string" column="first_name"></property>
+		<property name="lastName" type="string" column="last_name"></property>
+		<property name="email" type="string" column="email"></property>
+		<many-to-one name="instructorDetail" class="MavenHibernate.my.CRUD.InstructorDetail" 
+			cascade="all" column="instructor_detail_id" 
+			unique="true" not-null="true"></many-to-one>
+	</class>
+</hibernate-mapping>
